@@ -1,18 +1,19 @@
 //this file initializes the website
 
 // Importing necessary files and functions
-import './routes.js';
-import { router } from './router.js';
-import { initCommmonLayout } from './controllers/commonLayout_controller.js';
+import './router/routes.js';
+import { router } from './router/router.js';
+import { initGeneralLayout } from './controllers/generalLayout_controller.js';
 
 
 async function initApp(){
     
     window.addEventListener('hashchange', router);
     
-    window.addEventListener('load', async () => {
-        initCommmonLayout();
+    window.addEventListener('load', () => {
+        initGeneralLayout();
         router();
+
     }) 
 };
 

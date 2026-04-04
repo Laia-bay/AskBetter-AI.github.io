@@ -6,9 +6,7 @@ export function registerRoute(path, screen_name) {
 
 export function router() {
   const app = document.getElementById('app');
-  const hash = window.location.hash.slice(1) || '/main';
-  const [path, queryString] = hash.split('?');
-  const params = new URLSearchParams(queryString);
+  const path = window.location.hash.slice(1) || '/main';
 
 
 
@@ -16,7 +14,7 @@ export function router() {
 
   if (screen) {
     app.innerHTML = '';
-    app.appendChild(screen(params));
+    app.appendChild(screen());
   } 
   
   else {

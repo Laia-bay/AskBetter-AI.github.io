@@ -1,15 +1,13 @@
-import { navigate } from '../router.js';
+import { navigate } from "../router/router.js";
 
 
 export function initGeneralLayout(){
 
     const app = document.getElementById("app");
     //header (home button)
-    document.getElementById('menuBtn').addEventListener('click', () => {
-        const user = JSON.parse(sessionStorage.getItem('currentUser'));
-        if (user) {
-            navigate('/main');
-        }
-    });
+    const home_btn =  document.getElementById('menuBtn');
+    home_btn.addEventListener('click',
+        navigate('/main')
+    );
 };
 
