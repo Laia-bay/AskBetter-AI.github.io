@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-    <html lang="es">
+    <html lang="es" data-bs-theme="dark">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +12,13 @@
         <body>
             <section id="layout">
 
-                <header id="globalHeader" class="hidden">
-                        <button id="menuBtn" class="btn btn-secondary me-2">
+                <header id="globalHeader">
+                        <button id="homeBtn" class="btn btn-outline-light me-2">
                             <i class="bi bi-house-door"></i>
+                        </button>
+
+                        <button id="helpBtn" class="btn btn-outline-info outline me-2">
+                            <i class="bi bi-question-circle"></i>
                         </button>
                 </header>
 
@@ -26,6 +30,11 @@
                     -->
                 </div>
 
+                <footer>
+                    <button id="backBtn" class="btn btn-outline-light me-2 btn-sm" style="display:none">
+                        <i class="bi bi-arrow-return-left"></i>
+                    </button>
+                </footer>
             </section>
             <script type="module" src="src/app.js"></script>
         </body>

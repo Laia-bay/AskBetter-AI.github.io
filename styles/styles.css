@@ -1,6 +1,87 @@
+#layout {
+  font-family: 'Roboto';
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
 #globalHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+}
+
+#backBtn {
+  margin-top: auto;
+  margin-left: 10px;
+}
+
+.titles {
+  justify-self: center;
+  font-size: 40px;
+}
+
+.subtitles {
+  justify-self: center;
+  font-size: 25px;
+}
+
+#welcome {
+  margin-top: 5%;
+}
+
+.options {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/*COLOR BUTTONS*/
+
+.btn.option{
+  border: 2px solid;
+  font-size:17px;
+  width: 250px;
+}
+.btn.option:hover{
+  font-weight: bold;
+}
+
+.btn.option.concepto {
+    border-color:blueviolet;
+}
+
+.btn.option.concepto:hover {
+  background-color:blueviolet;
+}
+
+.btn.option.codigo {
+    border-color:dodgerblue;
+}
+.btn.option.codigo:hover {
+  background-color:dodgerblue;
+}
+
+.btn.option.resolver {
+    border-color:limegreen;
+}
+.btn.option.resolver:hover {
+  background-color:limegreen;
+}
+
+.btn.option.comprobar {
+    border-color:darkorange;
+}
+.btn.option.comprobar:hover {
+  background-color:darkorange;
+}
+
+
+/*EEEE*/
+#prueba{
+  color:blueviolet;
 }
