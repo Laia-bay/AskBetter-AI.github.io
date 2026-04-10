@@ -15,16 +15,7 @@ export function router() {
   if (screen) {
     app.innerHTML = '';
     app.appendChild(screen());
-    
-    const back_btn = document.getElementById('backBtn');
-
-    if (path != "/main"){
-      back_btn.style.display = "flex";
-    }
-    else{
-      back_btn.style.display = "none";
-    }
-  } 
+  }
   
   else {
     app.innerHTML = '<h1>404 - Page Not Found</h1>';

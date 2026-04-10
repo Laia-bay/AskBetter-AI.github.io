@@ -1,21 +1,21 @@
+/*STYLES OF THIS WEBSITE ARE DONE WITH CSS AND BOOTSTRAP*/
+
+/*GENERAL STRUCTURE*/
 #layout {
   font-family: 'Roboto';
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  gap:10px;
+  margin:40px;
+  font-size:17px;
 }
-
 
 #globalHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-}
-
-#backBtn {
-  margin-top: auto;
-  margin-left: 10px;
 }
 
 .titles {
@@ -28,6 +28,8 @@
   font-size: 25px;
 }
 
+
+/* MAIN SCREEN*/
 #welcome {
   margin-top: 5%;
 }
@@ -40,12 +42,13 @@
   gap: 25px;
 }
 
-/*COLOR BUTTONS*/
+  /*color of buttons*/
 
 .btn.option{
   border: 2px solid;
   font-size:17px;
-  width: 250px;
+  width: 260px;
+  padding: 12px 0px;
 }
 .btn.option:hover{
   font-weight: bold;
@@ -80,8 +83,138 @@
   background-color:darkorange;
 }
 
+/*TRABAJAR CON CÓDIGO SCREEN*/
+#coding{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
 
-/*EEEE*/
-#prueba{
-  color:blueviolet;
+.coding-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.comparison{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 200px;
+}
+
+.code{
+  margin-left: 10px;
+}
+
+.promptsDiv{
+  margin-top: 8px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:30px;
+}
+
+.promptText{
+  display:flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+  margin-left: 10px;
+  padding: 10px;
+  width: 500px;
+  gap:20px;
+  max-height: 431px;
+  overflow-y:auto;
+}
+
+.promptText p {
+  font-family: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+
+.resultsDiv {
+  margin-top:30px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 200px;
+}
+
+.footerSec{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+}
+
+.btn.prueba {
+  width: 110px;
+  padding: 8px 0px;
+  color:white;
+  background-color: dodgerblue;
+}
+
+.btn.prueba:hover {
+  font-weight: bold;
+  background-color: rgb(0, 80, 225);
+}
+
+#pistasPrompt {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  width: 1000px;
+  align-self: center;
+  justify-content: center;
+
+}
+
+.pistaDiv{
+  display:flex;
+  flex-direction:row;
+  gap:10px;
+}
+.btn.pista{
+  width: 70px;
+  height: 30px;
+  color:white;
+  border: 2px solid dodgerblue;
+}
+.btn.pista:hover{
+  background-color: dodgerblue;
+}
+
+.btn.pista.hide{
+  color:white;
+  border: 2px solid white;
+}
+
+.btn.pista.hide:hover{
+  background-color: gray;
+}
+
+#app pre[class*="language-"] {
+  background: #1e1e1e;
+  overflow-y:auto;
+  width: 500px;
+  align-self:center;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+#app .copy-to-clipboard {
+  font-size:0;
+}
+
+#app .copy-to-clipboard-button::after {
+  font-size:0;
 }

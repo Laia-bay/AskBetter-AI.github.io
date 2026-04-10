@@ -11,6 +11,5 @@ export function initGeneralLayout(){
     const help_btn =  document.getElementById('helpBtn');
     help_btn.onclick = () => {navigate('/help')};
 
-    const back_btn = document.getElementById('backBtn');
 };
 
