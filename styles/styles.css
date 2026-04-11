@@ -238,7 +238,17 @@
   }
 
   .code{
-    margin-left: 10%;
+    margin-left: 5%;
+  }
+
+  #app pre[class*="language-"] {
+    background: #1e1e1e;
+    overflow-y:auto;
+    width: 95%;
+    align-self:center;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 14px;
   }
 
   .promptsDiv{
@@ -261,6 +271,14 @@
     gap:10px;
     max-height: 300px;
     overflow-y:auto;
+  }
+
+  .resultsDiv {
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 5%;
   }
 
 
