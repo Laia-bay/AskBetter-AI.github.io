@@ -25,19 +25,28 @@ export function CodigoScreen (params){
             </p>
 
             <h3 style="color:dodgerblue"><em><b>Estrategia habitual</b></em></h3>
-            
             <p>A menudo, cuando no entendemos el código le decimos a la IA, "explícame esto",
             sin especificar qué es lo que no se entiende, o por qué. 
             De esta manera, se pone todo el peso del aprendizaje en la IA y ninguno en nosotros,
             que resulta en un aprendizaje más superficial que puede olvidarse el día del examen. 
             </p>
 
+            
             <h3 style="color:dodgerblue"><em><b>Estrategia alternativa</b></em></h3>
-
+            <div>
+                <p>Para sacarle el mayor partido a la IA generativa, se debe pasar la responsabilidad de la IA al estudiante.</p>
+                <p>Los prompts, que es el mensaje que escribes al chat con lo que quieres que haga, cuanto más específicos, mejor. 
+                Darle información sobre en qué curso estás, qué estás estudiando, o de qué asignatura se trata, ayuda a la IA a ofrecer una respuesta más personalizada.
+                Recuerda que aun así es importante no dar información personal o confidencial.</p>
+                <p> Sobre este mismo punto, ser más específico con qué parte entiendes, qué no, y cuál es tu manera de aprender, hará que los resultados que obtengas se adhieran más a tus necesidades.</p>
+                <p>De esta manera, la respuesta que tu chat conversacional te ofrezca tendrá la información que tú necesitas, en vez de una respuesta larga y genérica, que a veces puede confundir más que ayudar, o que se debe buscar entre todo lo mostrado la parte que te es relevante a ti.</p> 
+                <p>Explicar en el prompt qué crees que es lo que hace la función, y pedir que te corrija, también es una manera muy útil de aprender, que te hace pensar, en vez de esperar a que la IA te de la respuesta y copiarla.</p>
+            </div>
             <h3 style="color:dodgerblue"><em><b>Comparativa</b></em></h3>
             <p>Pongamos como ejemplo una función de <em>'Binary Search'</em> con python. 
             Esta función encuentra un valor en una array de manera más rápida que un loop normal.
             </p>
+            
 
             <div class=comparison>
                 <div class=code>
@@ -166,17 +175,48 @@ export function CodigoScreen (params){
             </div>
             <div id="pistasPrompt" class="promptText" style="display:none">
                 <div>
-                    <p>----Si no entiendes nada----</p>
+                    <p style="justify-self:center">Si no entiendes nada</p>
+                    <hr></hr>
+                    <p><i class="bi bi-caret-right"></i>Pide línea por línea</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pide que te haga preguntas</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pide que te explique qué deberías saber previamente para entenderlo</p>
                 </div>
                 <div>
-                    <p>----Si no entiendes una parte----</p>
+                    <p style="justify-self:center">Si no entiendes una parte</p>
+                    <hr></hr>
+                    <p><i class="bi bi-caret-right"></i>Pide específicamente que te explique esa parte</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Explica qué crees que hace el código, y qué crees que hace esa parte</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pide que te lo explique de otra manera, o si hay una manera más sencilla de escribir esa parte</p>
                 </div>
                 <div>
-                    <p>----Si eres un visual learner----</p>
+                    <p style="justify-self:center">Si eres un visual learner</p>
+                    <hr></hr>
+                    <p><i class="bi bi-caret-right"></i>Pide que te muestre algun vídeo de cómo funcionaría el código</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pide que te haga un boceto sencillo de lo que haría el código</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pide que te lo explique con un diagrama, o color-coded según la función de cada parte</p>
                 </div>
             </div>
             <h3 style="color:dodgerblue"><em><b>Momento de reflexión</b></em></h3>
             <p>Una vez has aplicado los nuevos prompts, y entendido el código, es momento de reflexionar sobre qué has aprendido y cómo te sientes.</p>
+            <div style="margin-left:30px"><h5 style="color:dodgerblue"><b><em>¿Qué ha cambiado al usar este tipo de prompts?</b></em></h5></div>
+            <div class="reflection">
+                <div>
+                    <input class="form-check-input" type="checkbox" id="opt1">
+                    <label class="form-check-label" for="opt1">He entendido más</label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" id="opt2">
+                    <label class="form-check-label" for="opt2">He estado más tiempo conversando con la IA</label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" id="opt3">
+                    <label class="form-check-label" for="opt3">Sé explicarlo por mi cuenta</label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" id="opt4">
+                    <label class="form-check-label" for="opt4">Me costaba no pedir la solución directa</label>
+                </div>
+            </div>
         </section>
 
         <section id="footer" class="footerSec" style="display:none">

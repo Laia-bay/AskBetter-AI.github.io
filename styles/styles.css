@@ -170,10 +170,10 @@
 #pistasPrompt {
   display: flex;
   flex-direction: row;
-  gap: 150px;
-  width: 1000px;
+  width: 1200px;
   align-self: center;
-  justify-content: center;
+  padding:20px 20px;
+  justify-content: space-between;
 
 }
 
@@ -199,6 +199,14 @@
 
 .btn.pista.hide:hover{
   background-color: gray;
+}
+
+.reflection{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-left: 60px;
+
 }
 
 #app pre[class*="language-"] {
