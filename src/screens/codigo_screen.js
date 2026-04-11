@@ -50,7 +50,6 @@ export function CodigoScreen (params){
 
             <div class=comparison>
                 <div class=code>
-    <!--code takes into account spaces, so we have to put it at the same indentation as container-->
     <pre><code class="language-python">def binarySearch(array,target):
     left = 0
     right = len(array)-1

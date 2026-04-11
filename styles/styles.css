@@ -236,7 +236,7 @@
     display: flex;
     flex-direction: column;
     gap:5px;
-    margin:5px;
+    margin:7px;
     font-size:17px;
   }
 
@@ -246,6 +246,14 @@
     justify-content: space-between;
   }
 
+  #coding{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
   .comparison{
     display: flex;
     flex-direction: column;
@@ -254,10 +262,12 @@
   }
 
   .code{
+    margin-top:0;
     margin-left: 2%;
   }
 
   #app pre[class*="language-"] {
+    margin-top:0;
     background: #1e1e1e;
     overflow-y:auto;
     width: 98%;
@@ -265,9 +275,10 @@
   }
 
   .promptsDiv{
-    margin-top: 5px;
+    margin-top: 10px;
     display:flex;
     flex-direction: column;
+    gap:5px;
   }
 
   .promptText{
@@ -277,8 +288,8 @@
     box-sizing: border-box;
     background-color: #1e1e1e;
     margin-left: 2%;
-    padding: 10px;
-    min-width: 98%;
+    padding: 5px;
+    width: 96%;
     gap:10px;
     max-height: 300px;
     overflow-y:auto;
@@ -288,7 +299,7 @@
     margin-top:10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin-left: 2%;
   }
 
