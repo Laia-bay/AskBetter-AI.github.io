@@ -201,12 +201,15 @@
   background-color: gray;
 }
 
+.titleReflection{
+  margin-left: 30px;
+}
+
 .reflection{
   display:flex;
   flex-direction:column;
   gap:15px;
   margin-left: 60px;
-
 }
 
 #app pre[class*="language-"] {
@@ -317,11 +320,18 @@
     gap:10px;
   }
 
+  .titleReflection{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-left: 4%;
+  }
+
   .reflection{
     display:flex;
     flex-direction:column;
     gap:15px;
-    margin-left: 40px;
+    margin-left: 6%;
   }
 
 }

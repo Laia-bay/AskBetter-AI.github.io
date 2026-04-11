@@ -197,7 +197,7 @@ export function CodigoScreen (params){
             </div>
             <h3 style="color:dodgerblue"><em><b>Momento de reflexión</b></em></h3>
             <p>Una vez has aplicado los nuevos prompts, y entendido el código, es momento de reflexionar sobre qué has aprendido y cómo te sientes.</p>
-            <div style="margin-left:25px"><h5 style="color:dodgerblue"><b><em>¿Qué ha cambiado al usar este tipo de prompts?</b></em></h5></div>
+            <div class="titleReflection"><h5 style="color:dodgerblue"><b><em>¿Qué ha cambiado al usar este tipo de prompts?</b></em></h5></div>
             <div class="reflection">
                 <div>
                     <input class="form-check-input" type="checkbox" id="opt1">
