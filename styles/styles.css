@@ -321,7 +321,7 @@
     background-color: #1e1e1e;
     margin-left: 1% !important;
     padding: 5px;
-    min-width: 98%;
+    width: 98% !important;
     gap:10px;
     max-height: 300px;
     overflow-y:auto;
@@ -339,7 +339,7 @@
     flex-direction: column;
     gap: 5px;
     margin-left: 1% !important;
-    max-width:98%;
+    max-width:98% !important;
   }
 
   #pistasPrompt {
