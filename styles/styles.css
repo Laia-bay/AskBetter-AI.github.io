@@ -41,7 +41,6 @@
   align-items: center;
   gap: 25px;
 }
-
   /*color of buttons*/
 
 .btn.option{
@@ -55,7 +54,7 @@
 }
 
 .btn.option.concepto {
-    border-color:blueviolet;
+  border-color:blueviolet;
 }
 
 .btn.option.concepto:hover {
@@ -83,6 +82,23 @@
   background-color:darkorange;
 }
 
+
+/*ENTENDER UN CONCEPTO SCREEN*/
+#explaining{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.explaining-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
 /*TRABAJAR CON CÓDIGO SCREEN*/
 #coding{
   margin-top: 5%;
@@ -98,19 +114,51 @@
   gap: 20px;
 }
 
+/*GENERAL STYLE FOR ALL SCREENS*/
 
+/*justifying text*/
+p {
+  margin-left: 1%;
+  max-width: 94%;
+  text-align: justify;
+  font-size:18px;
+}
+
+/*section where we compare the 2 strategies*/
 .comparison{
   display: flex;
   flex-direction: row;
   gap: 50px;
   margin-left: 200px;
 }
-
+/*section where code is added - inside is <pre><code class="languange-python">*/
 .code{
   margin-left: 10px;
 }
 
+/*style of section with code*/
+#app pre[class*="language-"] {
+  background: #1e1e1e;
+  max-height: 530px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  max-width: 670px;
+  min-width:500px;
+  align-self:center;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+/*couple of details of code section*/
+#app .copy-to-clipboard {
+  font-size:0;
+}
 
+#app .copy-to-clipboard-button::after {
+  font-size:0;
+}
+
+/*divison where habitual and mejorado prompts are*/
 .promptsDiv{
   margin-top: 8px;
   display:flex;
@@ -119,6 +167,17 @@
   gap:30px;
 }
 
+/*division where results of the habitual and mejorado prompts are shown*/
+.resultsDiv {
+  margin-top:30px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  justify-content: space-between;
+  max-width: 75%;
+}
+
+/*actual text inside the division - it is also used for the results.*/
 .promptText{
   display:flex;
   flex-direction: column;
@@ -132,17 +191,19 @@
   max-height: 390px;
   overflow-y:auto;
 }
-
-.promptText.example{
+/*specific configuration for trabajar con código-la IA me lo hace option: example exercise to be done*/
+.promptText.exercise{
   width:650px;
   min-height:fit-content;
   padding: 15px;
 }
 
+/*styling all elements inside prompt text to match the rest of the webpage*/
 .promptText p {
   font-family: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
   font-size: 15px;
   margin: 0;
+  max-width:98%;
 }
 .promptText h5 {
   font-family: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
@@ -158,15 +219,7 @@
   margin: 0;
 }
 
-.resultsDiv {
-  margin-top:30px;
-  display: flex;
-  flex-direction: row;
-  margin-left: 200px;
-  justify-content: space-between;
-  max-width: 75%;
-}
-
+/*section where atrás and pruebalo tu button are shown*/
 .footerSec{
   margin-top: 20px;
   display: flex;
@@ -175,19 +228,40 @@
   padding: 10px 20px;
 
 }
-
+/*styling the pruebalo tu button*/
 .btn.prueba {
   width: 110px;
   padding: 8px 0px;
   color:white;
+}
+/*changing color depending on screen*/
+.btn.prueba.codigo{
   background-color: dodgerblue;
 }
 
-.btn.prueba:hover {
+.btn.prueba.codigo:hover {
   font-weight: bold;
   background-color: rgb(0, 80, 225);
 }
 
+.btn.prueba.concepto{
+  background-color: blueviolet;
+}
+
+.btn.prueba.concepto:hover {
+  font-weight: bold;
+  background-color: rgb(120, 0, 160);
+}
+
+
+/*whole division of title, button, and optional pistas*/
+.pistaDiv{
+  display:flex;
+  flex-direction:row;
+  gap:10px;
+}
+
+/*division where the pistas are shown*/
 #pistasPrompt {
   display: flex;
   flex-direction: row;
@@ -196,24 +270,30 @@
   padding:20px 20px;
   justify-content: space-between;
   gap:100px;
-
 }
 
-.pistaDiv{
-  display:flex;
-  flex-direction:row;
-  gap:10px;
-}
+/*showing pistas button*/
 .btn.pista{
   width: 70px;
   height: 30px;
   color:white;
+}
+/*styling color depending on screen*/
+.btn.pista.codigo{
   border: 2px solid dodgerblue;
 }
-.btn.pista:hover{
+.btn.pista.codigo:hover{
   background-color: dodgerblue;
 }
 
+.btn.pista.concepto{
+  border: 2px solid blueviolet;
+}
+.btn.pista.concepto:hover{
+  background-color: blueviolet;
+}
+
+/*changing button when clicked to "esconde" with a light grey (common for all screens)*/
 .btn.pista.hide{
   color:white;
   border: 2px solid white;
@@ -223,10 +303,11 @@
   background-color: gray;
 }
 
+/*Title of reflection section*/
 .titleReflection{
   margin-left: 30px;
 }
-
+/*reflection division*/
 .reflection{
   display:flex;
   flex-direction:column;
@@ -234,26 +315,7 @@
   margin-left: 60px;
 }
 
-#app pre[class*="language-"] {
-  background: #1e1e1e;
-  max-height: 530px;
-  overflow-y:auto;
-  overflow-x:hidden;
-  max-width: 670px;
-  min-width:500px;
-  align-self:center;
-  padding: 10px;
-  padding-left: 20px;
-  font-size: 14px;
-}
 
-#app .copy-to-clipboard {
-  font-size:0;
-}
-
-#app .copy-to-clipboard-button::after {
-  font-size:0;
-}
 
 
 /*RESPONSIVE FOR MOBILE PHONES TOO*/
@@ -288,21 +350,20 @@
     flex-direction: column;
     gap: 5px;
     margin-left: 1% !important;
-    max-width: 50% !important;
+    max-width: 96% !important;
   }
 
   .code{
     margin-top:0;
     margin-left: 1%;
-    width: 50% !important;
+    max-width: 98% !important;
   }
 
   #app pre[class*="language-"] {
     margin-top:0;
     background: #1e1e1e;
     overflow-y:auto;
-    width: 50% !important;
-    font-size: 14px;
+    font-size: 14px;  
     max-height: 300px !important;
   }
 
@@ -311,7 +372,6 @@
     display:flex;
     flex-direction: column;
     gap:5px;
-    width:50% !important;
   }
 
   .promptText{
@@ -322,7 +382,7 @@
     background-color: #1e1e1e;
     margin-left: 1% !important;
     padding: 5px;
-    width: 50% !important;
+    max-width: 98% !important;
     gap:10px;
     max-height: 300px;
     overflow-y:auto;
@@ -331,7 +391,7 @@
   .promptText.example{
     margin-top: 0;
     margin-left: 1% !important;
-    width: 50% !important;
+    max-width: 98% !important;
   }
 
   .resultsDiv {
@@ -340,13 +400,13 @@
     flex-direction: column;
     gap: 5px;
     margin-left: 1% !important;
-    max-width:50% !important;
+    min-width: 100% !important;
   }
 
   #pistasPrompt {
     display: flex;
     flex-direction: column;
-    width: 96% !important;
+    max-width: 98% !important;
     margin: 1% !important;
     gap:50px;
     align-self: center;

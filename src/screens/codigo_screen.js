@@ -8,7 +8,7 @@ export function CodigoScreen (params){
         <p class="subtitles" style="margin-top:50px"> ¿Qué problema te estás encontrando?</p>
     
         <div id="coding">
-            <button id="entenderBtn" class="btn option codigo">No entiendo el código</button>
+            <button id="entenderBtn" class="btn option codigo">No entiendo la teoría</button>
             <button id="fallaBtn" class="btn option codigo">No me funciona y no sé por qué</button>
             <button id="noaprendoBtn" class="btn option codigo">La IA lo resuelve y no aprendo</button>
         </div>
@@ -94,7 +94,7 @@ export function CodigoScreen (params){
                     <h5 style="color:dodgerblue"><b><em>Resultado 1-</b> Prompt nº1 (habitual)</em></h5>
                     <div class="promptText">
 
-                        <p>Ese código implementa el algoritmo de <strong>búsqueda binaria</strong>, que sirve para encontrar un elemento (<code>target</code>) dentro de una lista (<code>array</code>) <strong>ordenada</strong>.</p>
+                        <p>Ese código implementa el algoritmo de <b>búsqueda binaria</b>, que sirve para encontrar un elemento (<code>target</code>) dentro de una lista (<code>array</code>) <b>ordenada</b>.</p>
 
                         <h5>¿Cómo funciona?</h5>
                         <ol>
@@ -126,16 +126,16 @@ export function CodigoScreen (params){
                     <div class="promptText">
 
                         <ul><code>def binarySearch(array,target):</code></ul>
-                        <p>Aquí estás <strong>definiendo una función</strong> llamada <code>binarySearch</code> que recibe dos parámetros:<br>
-                        <strong>array</strong>: una lista de números que debe estar ordenada.<br>
-                        <strong>target</strong>: el número que quieres buscar dentro de esa lista.</p>
+                        <p>Aquí estás <b>definiendo una función</b> llamada <code>binarySearch</code> que recibe dos parámetros:<br>
+                        <b>array</b>: una lista de números que debe estar ordenada.<br>
+                        <b>target</b>: el número que quieres buscar dentro de esa lista.</p>
 
                         <ul><code>left = 0<br>
                         right = len(array)-1</code></ul>
 
-                        <p>Estas dos líneas crean <strong>dos “punteros” o índices</strong>:<br>
-                        <strong>left = 0</strong> → empieza al inicio de la lista<br>
-                        <strong>right = len(array)-1</strong> → apunta al final de la lista</p>
+                        <p>Estas dos líneas crean <b>dos “punteros” o índices</b>:<br>
+                        <b>left = 0</b> → empieza al inicio de la lista<br>
+                        <b>right = len(array)-1</b> → apunta al final de la lista</p>
 
                         <p>En otras palabras, estás diciendo: 
                         <em>"Voy a buscar entre la posición 0 y la última posición del array."</em>
@@ -143,7 +143,7 @@ export function CodigoScreen (params){
 
                         <h5>Preguntas para comprobar si lo entiendes:</h5>
                         <ol>
-                            <li>Si <strong>array = [2, 4, 6, 8, 10]</strong>, ¿qué valor tendría <code>right</code>?</li>
+                            <li>Si <b>array = [2, 4, 6, 8, 10]</b>, ¿qué valor tendría <code>right</code>?</li>
                             <li>¿Por qué crees que usamos <code>len(array)-1</code> y no solo <code>len(array)</code>?</li>
                             <li>¿Qué representan realmente <code>left</code> y <code>right</code>: valores o posiciones?</li>
                         </ol>
@@ -301,13 +301,13 @@ export function CodigoScreen (params){
                         <p>1: Inicialización incorrecta de <code>list_clusters_assigned_points</code></p>
                         <code>list_clusters_assigned_points = [[]] * n_clusters</code>
 
-                        <p>Esto <strong>no crea listas independientes</strong>, 
-                        sino múltiples referencias a<strong> la misma lista en memoria</strong>.
+                        <p>Esto <b>no crea listas independientes</b>, 
+                        sino múltiples referencias a<b> la misma lista en memoria</b>.
                         </p>
 
                         <h5>¿Qué significa esto?</h5>
                         <p>Si haces: <code>list_clusters_assigned_points[0].append(point)</code></p>
-                        <p>Ese <code>point</code> se añadirá <strong>a TODOS los clusters</strong>, 
+                        <p>Ese <code>point</code> se añadirá <b>a TODOS los clusters</b>, 
                         porque en realidad todos apuntan a la misma lista.<br>
                         Esto rompe completamente el algoritmo, porque todos los puntos acaban en todos los clusters.
                         </p>
@@ -360,13 +360,13 @@ export function CodigoScreen (params){
             <h3 style="color:dodgerblue"><em><b>Comparativa</b></em></h3>
             <p>Pongamos como ejemplo que debes crear un pequeño juego de <em>'Adivina el número'</em> con python.</p>
             <div class="comparison" style="margin-left:70px">
-                <div class="promptText example">
+                <div class="promptText exercise">
                     <h5><em>Enunciado</em></h5>
                     <p>Desarrolla un programa en Python que implemente un juego en el que el ordenador genera un número aleatorio y 
                     el usuario debe adivinarlo.</p>
                     <ul style="margin-bottom:0">
-                        <li>El programa generará un número entero aleatorio entre <strong>1 y 20</strong> (ambos incluidos).</li>
-                        <li>A continuación, el usuario dispondrá de un máximo de <strong>10 intentos</strong> para adivinar el número.</li>
+                        <li>El programa generará un número entero aleatorio entre <b>1 y 20</b> (ambos incluidos).</li>
+                        <li>A continuación, el usuario dispondrá de un máximo de <b>10 intentos</b> para adivinar el número.</li>
                         <li>Después de cada intento, el programa debe indicar si el número introducido es mayor o menor que el número secreto.</li>
                     </ul>
                     <p>El juego termina cuando el usuario acierta el número o cuando se agotan los intentos.<br> 
@@ -375,8 +375,8 @@ export function CodigoScreen (params){
 
                     <h5><em>Requisitos del juego</em></h5>
                         <ul>
-                            <li>Es obligatorio utilizar un bucle <strong>while</strong> para controlar los intentos.</li>
-                            <li>Se puede usar la librería estándar <strong>random</strong> para generar el número.</li>
+                            <li>Es obligatorio utilizar un bucle <b>while</b> para controlar los intentos.</li>
+                            <li>Se puede usar la librería estándar <b>random</b> para generar el número.</li>
                             <li>Validar que la entrada del usuario sea un número entero.</li>
                             <li>Si la entrada no es válida, mostrar un mensaje de error y volver a pedir el número sin consumir intento.</li>
                         </ul>
@@ -446,39 +446,39 @@ export function CodigoScreen (params){
                 <div>
                     <h5 style="color:dodgerblue"><b><em>Resultado 2 -</b> Prompt nº1 (mejorado)</em></h5>
                     <div class="promptText">
-                        <h5><strong><em>Paso 1:</strong> Entender el objetivo básico</em></h5>
+                        <h5><b><em>Paso 1:</b> Entender el objetivo básico</em></h5>
 
                         <p>Antes de pensar en código, solo quiero asegurarme de que tienes clara la idea del juego.</p>
                         <div>
-                        <p><strong>Pregunta:</strong> Si tuvieras que explicar el juego con tus palabras, 
+                        <p><b>Pregunta:</b> Si tuvieras que explicar el juego con tus palabras, 
                         qué dirías que tiene que hacer el programa?</p>
-                        <ul><p style="color:gray"><strong>Respuesta del usuario:</strong> .....</p></ul>
+                        <ul><p style="color:gray"><b>Respuesta del usuario:</b> .....</p></ul>
                         </div>
 
-                        <h5><strong><em>Paso 2:</strong> El número secreto</em></h5>
+                        <h5><b><em>Paso 2:</b> El número secreto</em></h5>
 
-                        <p>El programa necesita guardar un número secreto que <strong>sea aleatorio</strong> y <strong>esté entre 1 y 20</strong></p>
+                        <p>El programa necesita guardar un número secreto que <b>sea aleatorio</b> y <b>esté entre 1 y 20</b></p>
                         <div>
-                        <p><strong>Pregunta:</strong> ¿Qué necesitas para crear ese número aleatorio en Python?</p>
-                        <ul><p style="color:gray"><strong>Respuesta del usuario:</strong> .....</p></ul>
+                        <p><b>Pregunta:</b> ¿Qué necesitas para crear ese número aleatorio en Python?</p>
+                        <ul><p style="color:gray"><b>Respuesta del usuario:</b> .....</p></ul>
 
-                        <p><strong>Pregunta:</strong> ¿Para qué crees que usamos un número aleatorio en este juego?
+                        <p><b>Pregunta:</b> ¿Para qué crees que usamos un número aleatorio en este juego?
                         ¿Qué pasaría si no fuera aleatorio?</p>
-                        <ul><p style="color:gray"><strong>Respuesta del usuario:</strong> .....</p></ul>
+                        <ul><p style="color:gray"><b>Respuesta del usuario:</b> .....</p></ul>
                         </div>
 
-                        <h5><strong><em>Paso 3:</strong> Estructura del juego</em></h5>
+                        <h5><b><em>Paso 3:</b> Estructura del juego</em></h5>
 
                         <p>Ahora vamos a algo clave antes de programar.<br>
                         El juego tiene dos “zonas”:</p>
                         <ol>
-                            <li><strong>Preparación</strong>
+                            <li><b>Preparación</b>
                                 <ul>
                                     <li>Se crea el número secreto</li>
                                     <li>Se preparan los intentos</li>
                                 </ul>
                             </li>
-                            <li><strong>Juego</strong>
+                            <li><b>Juego</b>
                                 <ul>
                                     <li>El usuario intenta adivinar</li>
                                     <li>Se repite varias veces</li>
@@ -486,15 +486,15 @@ export function CodigoScreen (params){
                             </li>
                         </ol>
                         <div>
-                        <p><strong>Pregunta:</strong> ¿Cuál de estas dos partes crees que se repite varias veces?</p>
+                        <p><b>Pregunta:</b> ¿Cuál de estas dos partes crees que se repite varias veces?</p>
                         <ul>
                             <li>A) Crear el número secreto</li>
                             <li>B) Pedir al usuario que intente adivinar</li>
                         </ul>
-                        <ul><p style="color:gray"><strong>Respuesta del usuario:</strong> .....</p></ul>
+                        <ul><p style="color:gray"><b>Respuesta del usuario:</b> .....</p></ul>
 
-                        <p><strong>Pregunta:</strong> Si el usuario tiene 10 intentos, ¿qué significa eso en lógica?</p>
-                        <ul><p style="color:gray"><strong>Respuesta del usuario:</strong> .....</p></ul>
+                        <p><b>Pregunta:</b> Si el usuario tiene 10 intentos, ¿qué significa eso en lógica?</p>
+                        <ul><p style="color:gray"><b>Respuesta del usuario:</b> .....</p></ul>
                         </div>
                         <p style="color:lightslategray"><b>...Y así seguiría hasta terminar el ejercicio</b></p>
                         
@@ -509,7 +509,7 @@ export function CodigoScreen (params){
             Utiliza tu IA de confianza.</p>
             <div class="pistaDiv">
                 <p><em><b>¿Necesitas ayuda?</b></em></p>
-                <button id="pistaBtn" class="btn pista btn-sm">
+                <button id="pistaBtn" class="btn pista codigo btn-sm">
                     <i class="bi bi-lightbulb"></i> Pista
                 </button>
             </div>
@@ -542,7 +542,7 @@ export function CodigoScreen (params){
 
         <section id="footer" class="footerSec" style="display:none">
             <button id="atrasBtn" class="btn btn-outline-light me-2">Atrás</button>
-            <button id="pruebaBtn" class="btn prueba">Pruebalo tú!</button>
+            <button id="pruebaBtn" class="btn prueba codigo">Pruebalo tú!</button>
         </section>
     `;
 

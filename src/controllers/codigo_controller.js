@@ -233,7 +233,7 @@ export function CodigoController (params){
 
         //showing clues of prompts
     pista_btn.addEventListener('click', () =>{
-        if(pista_btn.className == "btn pista btn-sm"){
+        if(pista_btn.className == "btn pista codigo btn-sm"){
             pistas.style.display="";
             pista_btn.innerText = "esconde";
             pista_btn.classList.add("hide");
