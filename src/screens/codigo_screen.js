@@ -8,14 +8,14 @@ export function CodigoScreen (params){
         <p class="subtitles" style="margin-top:50px"> ¿Qué problema te estás encontrando?</p>
     
         <div id="coding">
-            <button id="entenderBtn" class="btn option codigo">No entiendo la teoría</button>
+            <button id="entenderBtn" class="btn option codigo">No entiendo el código</button>
             <button id="fallaBtn" class="btn option codigo">No me funciona y no sé por qué</button>
             <button id="noaprendoBtn" class="btn option codigo">La IA lo resuelve y no aprendo</button>
         </div>
 
         <!--depending on the option chosen the content will be different-->
 
-        <section id="entender" class="coding-section" style="display:none">
+        <section id="entender" class="content-section" style="display:none">
             <h3 style="color:dodgerblue"><em><b>No entiendo el código</b></em></h3>
 
             <p>No te preocupes, es un problema muy común.
@@ -154,7 +154,7 @@ export function CodigoScreen (params){
             
         </section>
 
-        <section id="falla" class="coding-section" style="display:none">
+        <section id="falla" class="content-section" style="display:none">
             <h3 style="color:dodgerblue"><em><b>No me funciona y no sé por qué</b></em></h3>
 
             <p>No te preocupes, es un problema muy común.
@@ -322,7 +322,7 @@ export function CodigoScreen (params){
 
         </section>
 
-        <section id="noaprendo" class="coding-section" style="display:none">
+        <section id="noaprendo" class="content-section" style="display:none">
             <h3 style="color:dodgerblue"><em><b>La IA lo resuelve y no aprendo</b></em></h3>
 
             <p>No te preocupes, es un problema muy común.
@@ -503,7 +503,7 @@ export function CodigoScreen (params){
             </div>    
         </section>
 
-        <section id="pruebatu" class="coding-section" style="display:none">
+        <section id="pruebatu" class="content-section" style="display:none">
             <h3 style="color:dodgerblue"><em><b>Aplícalo a tu caso particular</b></em></h3>    
             <p>Piensa en los prompts propuestos en la página anterior, y utiliza, o crea uno particular que te sirva para el código que no has entendido.
             Utiliza tu IA de confianza.</p>

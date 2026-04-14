@@ -14,7 +14,7 @@ export function ConceptoScreen (params){
 
         <!--depending on the option chosen the content will be different-->
 
-        <section id="teoria" class="explaining-section" style="display:none">
+        <section id="teoria" class="content-section" style="display:none">
             <h3 style="color:blueviolet"><em><b>No entiendo la teoría</b></em></h3>
             <div>
                 <p>
@@ -180,7 +180,7 @@ export function ConceptoScreen (params){
         </section>
 
 
-        <section id="repasar" class="explaining-section" style="display:none">
+        <section id="repasar" class="content-section" style="display:none">
             <h3 style="color:blueviolet"><em><b>Quiero repasar la teoría</b></em></h3>
             <div>
             <p>
@@ -374,7 +374,7 @@ export function ConceptoScreen (params){
             </div>
         </section>
 
-        <section id="pruebatu" class="explaining-section" style="display:none">
+        <section id="pruebatu" class="content-section" style="display:none">
             <h3 style="color:blueviolet"><em><b>Aplícalo a tu caso particular</b></em></h3>    
             <p>Piensa en los prompts propuestos en la página anterior, y utiliza, o crea uno particular que te sirva para la asignatura que quieras.
             Utiliza tu IA de confianza.</p>
@@ -413,7 +413,7 @@ export function ConceptoScreen (params){
 
         <section id="footer" class="footerSec" style="display:none">
             <button id="atrasBtn" class="btn btn-outline-light me-2">Atrás</button>
-            <button id="pruebaBtn" class="btn prueba concepto">Pruebalo tú!</button>
+            <button id="pruebaBtn" class="btn prueba resolver">Pruebalo tú!</button>
         </section>
 
 
