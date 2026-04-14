@@ -436,6 +436,7 @@ p {
     gap:50px;
     align-self: center;
     height:200px;
+    padding:10px 10px;
   }
 
   .pistaDiv{

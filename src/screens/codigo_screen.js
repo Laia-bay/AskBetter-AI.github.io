@@ -527,7 +527,7 @@ export function CodigoScreen (params){
                 </div>
                 <div>
                     <input class="form-check-input" type="checkbox" id="opt2">
-                    <label class="form-check-label" for="opt2">He estado más tiempo conversando con la IA</label>
+                    <label class="form-check-label" for="opt2">He estado más tiempo hablando con la IA</label>
                 </div>
                 <div>
                     <input class="form-check-input" type="checkbox" id="opt3">
