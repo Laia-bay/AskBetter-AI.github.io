@@ -18,7 +18,7 @@ export function ConceptoScreen (params){
             <h3 style="color:blueviolet"><em><b>No entiendo la teoría</b></em></h3>
             <div>
                 <p>
-                La IA Generativa tiene un gran potencial para explicar la teoría de diferentes maneras para el/la estudiante,  
+                La IA Generativa tiene un gran potencial para explicar la teoría de diferentes maneras para el/la estudiante, 
                 pero los prompts utilizados afectan al resultado.
                 </p>
                 <p>
@@ -116,7 +116,7 @@ export function ConceptoScreen (params){
                     </div>
                 </div>
                 <div>
-                    <h5 style="color:blueviolet"><b><em>Resultado 2 -</b> Prompt nºX (mejorado)</em></h5>
+                    <h5 style="color:blueviolet"><b><em>Resultado 2 -</b> Prompt nº1 (mejorado)</em></h5>
                     <div class="promptText" style="max-height:360px">
                         <h5><b>1. Transferencia fiable de datos</b></h5>
                         <div>
@@ -182,79 +182,193 @@ export function ConceptoScreen (params){
 
         <section id="repasar" class="explaining-section" style="display:none">
             <h3 style="color:blueviolet"><em><b>Quiero repasar la teoría</b></em></h3>
-
+            <div>
             <p>
-            La IA Generativa tiene un gran potencial para actuar como profesor, o ofrecer ejercicios y preguntas para asegurar 
-            que has entendido el contenido, pero los prompts utilizados afectan al resultado. 
-            Ahora miraremos la estrategia que es usada habitualmente, y alternativas que pueden ser útiles.
+            La IA Generativa tiene un gran potencial para actuar como profesor, ofrecer ejercicios y preguntas para asegurar 
+            que has entendido el contenido, y en general repasar de cara a un examen pero los prompts utilizados afectan al resultado. 
             </p>
-
+            <p>Ahora miraremos la estrategia que es usada habitualmente, y alternativas que pueden ser útiles.</p>
+            </div>
             <h3 style="color:blueviolet"><em><b>Estrategia habitual</b></em></h3>
-            <p>LALLLALL
+            <div>
+            <p>Para ahorrar tiempo, se suele pedir a la IA que te pregunte para ver si te lo sabes, 
+            pero esto no tiene en cuenta el nivel por el que debe preguntar, cuáles son los conceptos más importantes,
+            el feedback que debe ofrecer, qué tipo de ejercicios te van mejor o o cómo son los que te entrarian en un examen.
             </p>
-
+            <p>
+            Esto resulta en un camino de aprendizaje genérico y poco adaptado a tus necesidades.<br>
+            En cambio, con prompts más específicos,
+            la IA se puede adherir a tu manera de aprender.
+            </p>
+            </div>
             
             <h3 style="color:blueviolet"><em><b>Estrategia alternativa</b></em></h3>
             <div>
-                <p>Para sacarle el mayor partido a la IA generativa, se debe pasar la responsabilidad de la IA al estudiante.</p>
-                <p>LALALALALALLALALLALALALALAL</p>
+                <p>Para sacarle el mayor partido a la IA generativa, se debe ser más específico.<br>
+                En casos de explicación y repaso de teoría, es muy útil decirle a la IA que coja el rol de "profesor", de esta manera,
+                después de cada ejercicio hecho, te dará un feedback similar al que te daría un profesor, y personalizado a tu manera de aprender
+                y entender las cosas.
+                </p>
+                <p>El tipo de ejercicios y/o preguntas a hacer para repasar también es importante. Pueden ser ejercicios que vayan aumentando 
+                de dificultad, o preguntas como las que te saldrían en el examen.<br>
+                Para ambos casos, es importante darle al menos un ejemplo a tu IA conversacional para que sepa qué es lo que quieres.</p>
             </div>
             <h3 style="color:blueviolet"><em><b>Comparativa</b></em></h3>
-            <p>Pongamos como ejemplo que quieres repasar qué es <em>'_____'</em>.<br>
+            <p>Pongamos como ejemplo que quieres repasar <em>'cómo funciona una CDN'</em>.<br>
             Esto es lo que tienes en las diapositivas/en tus apuntes:
             </p>
 
-            <div class="comparison">
-                <div class="promptText">
-                    <p>eoeoeoeoeoeoe</p>
-                    <ul>
-                        <li><p>oaoaoaooao</p></li>
-                        <li><p>oaoaoaooao</p></li>
-                        <li><p>oaoaoaooao</p></li>
-                    </ul>
-                    <p>lalallala</p>
+            <div class="comparison" style="margin-left:70px">
+                <div class="promptText exercise" style="height:470px">
+                        <h5><b><em>Content Delivery Network (CDN)</em></b></h5>
+
+                        <p>Una <b>CDN (Content Delivery Network)</b> es una red grande y geográficamente distribuida de servidores 
+                        especializados cuyo objetivo es acelerar la entrega de contenido web, como páginas, vídeos o imágenes, 
+                        a los usuarios finales.
+                        </p>
+
+                        <p>Para ello, se apoya en distintos elementos.<br>
+                        Por un lado, los <b>Puntos de Presencia (PoPs)</b>, 
+                        que son centros de datos situados estratégicamente cerca de los usuarios y que contienen múltiples 
+                        servidores de caché.
+                        </p>
+
+                        <p>Los <b>servidores de caché</b> almacenan copias de los contenidos más solicitados para servirlos 
+                        rápidamente, reduciendo el consumo de ancho de banda, la latencia y la carga sobre el servidor original.
+                        </p>
+
+                        <p>Además, existe un componente llamado <b>selector</b>, encargado de decidir a qué PoP y a qué servidor 
+                        de caché debe conectarse cada usuario. Esta decisión se basa en distintas <b>políticas de encaminamiento 
+                        (routing policies)</b>, teniendo en cuenta factores como la topología de red, el contenido disponible en 
+                        caché, el estado de los servidores, el proveedor de Internet (ISP), la localización del usuario, 
+                        la hora del día o la calidad de servicio (QoS).
+                        </p>
+
+                        <p>Para gestionar eficientemente la distribución de datos, se puede utilizar el <b>hashing consistente 
+                        (consistent hashing)</b>, una técnica que permite que, al cambiar el número de servidores, 
+                        solo sea necesario reasignar una pequeña parte de los datos.
+                        </p>
+
+                        <p>Las CDN ofrecen múltiples ventajas: permiten atender a un gran número de usuarios simultáneamente, 
+                        reducen la latencia, ayudan a soportar picos de demanda, disminuyen el tráfico dentro de la red de 
+                        distribución y mejoran la calidad de servicio.
+                        </p>
+
+                        <p>Por último, la distribución de los PoPs suele basarse en una <b>matriz de costes</b>, que representa la 
+                        distancia (en términos de latencia o coste de comunicación) entre los distintos puntos de la red.
+                        </p>
                 </div>
                 <div class="promptsDiv">
                     <div>
                         <h5 style="color:blueviolet"><b><em>Prompts habituales</b></em></h5>
                         <div class="promptText">
-                            <p><i class="bi bi-caret-right"></i>Hazme preguntas para ver si he entendido esto</p>
-                            <p><i class="bi bi-caret-right"></i>Ayudame a repasar esta teoria</p>
+                            <p><i class="bi bi-caret-right"></i>Hazme preguntas para ver si he entendido esto.</p>
+                            <p><i class="bi bi-caret-right"></i>Ayudame a repasar esta teoria.</p>
                         </div>
                     </div>
                     <div>
                         <h5 style="color:blueviolet"><b><em>Prompts mejorados</b></em></h5>
                         <div class="promptText">
-                            <p><i class="bi bi-caret-right"></i>________________________________</p>
-                            <p><i class="bi bi-caret-right"></i>____________________________
+                            <p><i class="bi bi-caret-right"></i>Actúa como si fueras mi profesor. Quiero repasar este contenido, 
+                            que es de primer curso de ingeniería. Haz rondas de 5 preguntas incrementando la dificultad cada vez 
+                            y dame feedback para que pueda aprender que las respuestas que he dado.
                             </p>
-                            <p><i class="bi bi-caret-right"></i>________________________</p>
-                            <p><i class="bi bi-caret-right"></i>_____________________</p>
+                            <div>
+                            <p><i class="bi bi-caret-right"></i>Actúa como si fueras mi profesor. Quiero repasar esto para el 
+                            examen, este es el tipo de preguntas que me pueden salir: <em>copiar ejemplo aquí</em>
+                            </p>
+                            </div>
+                            <p><i class="bi bi-caret-right"></i>Quiero repasar este contenido. Actúa como mi profesor. 
+                            Haz ejercicios de completar los huecos, comprueba si lo he hecho bien, e incrementa la dificultad 
+                            después de cada uno.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="resultsDiv">
+            <div class="resultsDiv" style="margin-left:70px; max-width:85%">
                 <div>
-                    <h5 style="color:blueviolet"><b><em>Resultado 1-</b> Prompt nºX (habitual)</em></h5>
-                    <div class="promptText">
-                        <p>eoeoeoeoeoeoe</p>
-                        <ul>
-                            <li><p>oaoaoaooao</p></li>
-                            <li><p>oaoaoaooao</p></li>
-                            <li><p>oaoaoaooao</p></li>
-                        </ul>
+                    <h5 style="color:blueviolet"><b><em>Resultado 1-</b> Prompt nº2 (habitual)</em></h5>
+                    <div class="promptText" style="width:650px">
+                        <h5>Conceptos básicos</h5>
+                        <ol>
+                            <li>¿Cuál es el objetivo principal de una CDN?</li>
+                            <li>¿Qué es un PoP y por qué se colocan cerca de los usuarios?</li>
+                            <li>¿Qué almacenan exactamente los servidores de caché?</li>
+                        </ol>
+
+                        <h5>Funcionamiento</h5>
+                        <ol start="4">
+                            <li>¿Qué problema se intenta evitar al servir contenido desde caché en lugar del servidor original?</li>
+                            <li>¿Qué papel tiene el “selector” dentro de una CDN?</li>
+                            <li>Nombra al menos 3 factores que el selector puede tener en cuenta para decidir a qué servidor enviar a un usuario.</li>
+                        </ol>
+
+                        <h5>Routing y decisiones</h5>
+                        <ol start="7">
+                            <li>¿Por qué el “camino más rápido” no siempre coincide con la distancia física más corta?</li>
+                            <li>¿Cómo puede influir el ISP del usuario en la decisión del selector?</li>
+                            <li>¿Por qué la hora del día puede afectar a la elección del servidor?</li>
+                        </ol>
+
+                        <h5>Técnicas clave</h5>
+                        <ol start="10">
+                            <li>Explica con tus palabras qué es el <em>consistent hashing</em>.</li>
+                            <li>¿Qué ventaja tiene el consistent hashing cuando se añade o elimina un servidor?</li>
+                            <li>¿Qué pasaría si no se usara consistent hashing y cambiara el número de servidores?</li>
+                        </ol>
+
+                        <h5>Ventajas</h5>
+                        <ol start="13">
+                            <li>Menciona 3 beneficios de usar una CDN.</li>
+                            <li>¿Cómo ayuda una CDN a soportar picos de tráfico?</li>
+                            <li>¿Por qué una CDN reduce el consumo de ancho de banda del servidor original?</li>
+                        </ol>
+
+                        <h5>Aplicación / razonamiento</h5>
+                        <ol start="16">
+                            <li>Imagina que un contenido no está en caché en ningún PoP cercano, ¿qué ocurriría?</li>
+                            <li>Si un servidor de caché está saturado, ¿qué debería hacer el selector?</li>
+                            <li>¿Qué representa la matriz de costes en una CDN?</li>
+                        </ol>
                     </div>
                 </div>
                 <div>
                     <h5 style="color:blueviolet"><b><em>Resultado 2 -</b> Prompt nº1 (mejorado)</em></h5>
                     <div class="promptText">
-                        <p>eoeoeoeoeoeoe</p>
-                        <ul>
-                            <li><p>oaoaoaooao</p></li>
-                            <li><p>oaoaoaooao</p></li>
-                            <li><p>oaoaoaooao</p></li>
-                        </ul>
+                        <h5><b><em>Repaso de CDN</em></b></h5>
+
+                        <p>
+                        Perfecto, vamos a hacerlo como en clase. Te haré una <b>primera ronda de 5 preguntas básicas</b> 
+                        para comprobar que tienes claros los fundamentos. Después de que respondas, te daré 
+                        <b>feedback detallado</b> y subiremos el nivel.
+                        </p>
+
+                        <h5>Ronda 1 — Nivel básico</h5>
+                        <p><b>Pregunta 1</b><br>
+                        ¿Qué es una CDN y cuál es su objetivo principal?
+                        </p>
+
+                        <p><b>Pregunta 2</b><br>
+                        ¿Qué es un PoP (Punto de Presencia) dentro de una CDN?
+                        </p>
+
+                        <p><b>Pregunta 3</b><br>
+                        ¿Qué función tienen los servidores de caché?
+                        </p>
+
+                        <p><b>Pregunta 4</b><br>
+                        ¿Para qué sirve el selector en una CDN? Menciona al menos <b>dos factores</b> que tiene en cuenta.
+                        </p>
+
+                        <p><b>Pregunta 5</b><br>
+                        ¿Qué ventaja aporta el hashing consistente en una CDN?
+                        </p>
+                
+                        <p>
+                        Responde numerando del 1 al 5 (como en un examen). Después te corrijo como profesor —
+                        con nota orientativa, errores y cómo mejorar— y pasamos a la siguiente ronda más difícil.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -279,19 +393,19 @@ export function ConceptoScreen (params){
             <div class="titleReflection"><h5 style="color:blueviolet"><b><em>¿Qué ha cambiado al usar este tipo de prompts?</b></em></h5></div>
             <div class="reflection">
                 <div>
-                    <input class="form-check-input" type="checkbox" id="opt1">
+                    <input class="form-check-input concepto" type="checkbox" id="opt1">
                     <label class="form-check-label" for="opt1">He entendido más</label>
                 </div>
                 <div>
-                    <input class="form-check-input" type="checkbox" id="opt2">
+                    <input class="form-check-input concepto" type="checkbox" id="opt2">
                     <label class="form-check-label" for="opt2">He estado más tiempo conversando con la IA</label>
                 </div>
                 <div>
-                    <input class="form-check-input" type="checkbox" id="opt3">
+                    <input class="form-check-input concepto" type="checkbox" id="opt3">
                     <label class="form-check-label" for="opt3">Sé explicarlo por mi cuenta</label>
                 </div>
                 <div>
-                    <input class="form-check-input" type="checkbox" id="opt4">
+                    <input class="form-check-input concepto" type="checkbox" id="opt4">
                     <label class="form-check-label" for="opt4">Me ha ofrecido respuestas que se adherían más a mi forma de aprender</label>
                 </div>
             </div>

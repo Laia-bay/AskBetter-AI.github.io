@@ -109,59 +109,55 @@ export function ConceptoController (params){
         if (section == "teoria"){
             pistas.innerHTML = `
                 <div>
-                    <p style="justify-self:center">Si ___________</p>
+                    <p style="justify-self:center">Si aprendes con ejemplos</p>
                     <hr></hr>
-                    <p><i class="bi bi-caret-right"></i>___________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>______________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>________
+                    <p><i class="bi bi-caret-right"></i>Pedir un ejemplo real.</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir una comparación con algo de tu vida cotidiana.</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir que ponga ejemplos cada vez más complejos.
                     </p>
                 </div>
-                <div>
-                    <p style="justify-self:center">Si ________________</p>
+                <div style="max-width:40%">
+                    <p style="justify-self:center">Si aprendes de manera visual</p>
                     <hr></hr>
-                    <p><i class="bi bi-caret-right"></i>_______________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>________________
+                    <p><i class="bi bi-caret-right"></i>Pedir esquemas o diagramas.</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir videos explicativos.
                     </p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>___________________
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Si los apuntes son muy extensos, 
+                    pedir que codifique por colores según la función de cada parte (por ejemplo, dividir entre las 7 layers 
+                    del modelo OSI).
                     </p>
-                </div>
-                <div>
-                    <p style="justify-self:center">Si _____________</p>
-                    <hr></hr>
-                    <p><i class="bi bi-caret-right"></i>__________________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>_______________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>_____________________</p>
                 </div>
             `;
+            pistas.style.marginLeft="60px";
+            pistas.style.alignSelf="flex-start";
+            pistas.style.justifyContent="center";
+            pistas.style.width="1000px";
+            pistas.style.gap="100px";
+            
         }
 
         if (section == "repasar"){
             pistas.innerHTML = `
                 <div>
-                    <p style="justify-self:center">Si ___________</p>
+                    <p style="justify-self:center">Cosas a tener en cuenta</p>
                     <hr></hr>
-                    <p><i class="bi bi-caret-right"></i>___________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>______________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>________
+                    <p><i class="bi bi-caret-right"></i>Menciona el rol de profesor.</p>
+                    <p><i class="bi bi-caret-right"></i>Menciona el nivel que deberían tener las respuestas.<br>
+                    (por ejemplo: 1er curso de ingeniería)
                     </p>
-                </div>
-                <div>
-                    <p style="justify-self:center">Si ________________</p>
-                    <hr></hr>
-                    <p><i class="bi bi-caret-right"></i>_______________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>________________
+                    <p><i class="bi bi-caret-right"></i>Si lo sabes, menciona lo que tu profesor/a considera más importante.</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Menciona la incrementación de dificultad.</p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Menciona el tipo de ejercicios que quieres hacer 
+                    y pon uno de ejemplo.
                     </p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>___________________
-                    </p>
-                </div>
-                <div>
-                    <p style="justify-self:center">Si _____________</p>
-                    <hr></hr>
-                    <p><i class="bi bi-caret-right"></i>__________________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>_______________</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>_____________________</p>
-                </div>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Menciona el nivel de feedback que quieres 
+                    (detallado o conciso).</p>
             `;
+
+            pistas.style.marginLeft="200px";
+            pistas.style.alignSelf="flex-start";
+            pistas.style.justifyContent="center";
+            pistas.style.width="700px";
         }
     }
 

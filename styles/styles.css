@@ -194,7 +194,7 @@ p {
 /*specific configuration for trabajar con código-la IA me lo hace option: example exercise to be done*/
 .promptText.exercise{
   width:650px;
-  min-height:fit-content;
+  max-height:fit-content;
   padding: 15px;
 }
 
@@ -315,6 +315,21 @@ p {
   margin-left: 60px;
 }
 
+/*changing color of checked boxes depending on screen*/
+/*original is already blue so there is no need to change in codigo*/
+.form-check-input.concepto:checked {
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.form-check-input.resolver:checked {
+  background-color: limegreen;
+  border-color: limegreen;
+}
+.form-check-input.comprobar:checked {
+  background-color: darkorange;
+  border-color: darkorange;
+}
 
 
 
@@ -335,6 +350,14 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .titles {
+    text-align:center
+  }
+
+  .subtitles {
+    text-align:center
   }
 
   #coding{
@@ -365,6 +388,7 @@ p {
     overflow-y:auto;
     font-size: 14px;  
     max-height: 300px !important;
+    max-width: 98% !important;
   }
 
   .promptsDiv{
@@ -372,6 +396,7 @@ p {
     display:flex;
     flex-direction: column;
     gap:5px;
+    max-width: 98% !important;
   }
 
   .promptText{
