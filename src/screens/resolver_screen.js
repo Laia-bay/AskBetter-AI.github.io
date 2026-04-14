@@ -145,7 +145,7 @@ export function ResolverScreen (params){
                     </div>
                 </div>
                 <div>
-                    <h5 style="color:limegreen"><b><em>Resultado 2 -</b> Prompt nºX (mejorado)</em></h5>
+                    <h5 style="color:limegreen"><b><em>Resultado 2 -</b> Prompt nº2 (mejorado)</em></h5>
                     <div class="promptText" style="max-height:360px">
                         <p>Perfecto, vamos paso a paso sin spoilear la solución</p>
                         <div>
