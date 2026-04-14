@@ -406,6 +406,7 @@ p {
   .code{
     margin-top:0;
     margin-left: 1%;
+    min-width: none;
     max-width: 98% !important;
   }
 
@@ -415,8 +416,9 @@ p {
     overflow-y:auto;
     font-size: 14px;  
     max-height: 300px !important;
-    min-width: none;
-    width: 98% !important;
+    min-width: 0;
+    width: 100% !important;
+    max-width:100% !important;
   }
 
   .promptsDiv{
@@ -436,7 +438,7 @@ p {
     margin-left: 1% !important;
     padding: 5px;
     min-width: none;
-    width: 98% !important;
+    width: 100% !important;
     gap:10px;
     max-height: 300px;
     overflow-y:auto;
@@ -445,7 +447,7 @@ p {
   .promptText.example{
     margin-top: 0;
     margin-left: 1% !important;
-    max-width: 98% !important;
+    max-width: 100% !important;
   }
 
   .resultsDiv {

@@ -413,7 +413,7 @@ export function ConceptoScreen (params){
 
         <section id="footer" class="footerSec" style="display:none">
             <button id="atrasBtn" class="btn btn-outline-light me-2">Atrás</button>
-            <button id="pruebaBtn" class="btn prueba resolver">Pruebalo tú!</button>
+            <button id="pruebaBtn" class="btn prueba concepto">Pruebalo tú!</button>
         </section>
 
 
