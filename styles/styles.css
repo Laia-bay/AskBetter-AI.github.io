@@ -400,7 +400,7 @@ p {
     flex-direction: column;
     gap: 5px;
     margin-left: 1% !important;
-    max-width: 96% !important;
+    max-width: 98% !important;
   }
 
   .code{
@@ -426,7 +426,7 @@ p {
     display:flex;
     flex-direction: column;
     gap:5px;
-    max-width: 98% !important;
+    width: 98% !important;
   }
 
   .promptText{
