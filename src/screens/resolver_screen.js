@@ -229,7 +229,7 @@ export function ResolverScreen (params){
                 </div>
                 <div>
                     <input class="form-check-input resolver" type="checkbox" id="opt4">
-                    <label class="form-check-label" for="opt4">Me siento más satisfecho/a con mi aprendizaje</label>
+                    <label class="form-check-label" for="opt4">Estoy satisfecho/a con el resultado</label>
                 </div>
             </div>
         </section>

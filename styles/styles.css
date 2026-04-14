@@ -426,6 +426,7 @@ p {
     display:flex;
     flex-direction: column;
     gap:5px;
+    align-items: stretch;
     width: 98% !important;
   }
 
