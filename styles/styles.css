@@ -470,9 +470,10 @@ p {
     flex-direction: column;
     max-width: 98% !important;
     margin: 1% !important;
-    gap:50px;
+    gap:10px !important;
     align-self: center;
     height:200px;
+    overflow-y: auto;
     padding:10px 10px;
   }
 
