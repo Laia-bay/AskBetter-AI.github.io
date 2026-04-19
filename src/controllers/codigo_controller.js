@@ -29,6 +29,12 @@ export function CodigoController (params){
     let actualSection = null;
     let isVisible = null;
 
+    //controlling the audio
+    const audio_entender = container.querySelector('#audioEntender');
+    const audio_falla = container.querySelector('#audioFalla');
+    const audio_noaprendo = container.querySelector('#audioNoaprendo');
+    let utterance = null;
+
     //referencing the elements from pruebalo tu section/page
     const pistas = container.querySelector('#pistasPrompt');
     const pista_btn = container.querySelector('#pistaBtn');
@@ -74,6 +80,33 @@ export function CodigoController (params){
         }
     }
 
+    //leer: reads the content of the page
+    function leerEvent(section) {
+
+        if (utterance){
+            if (speechSynthesis.speaking && !speechSynthesis.paused) {
+                speechSynthesis.pause();
+                return;
+            }
+        
+            if (speechSynthesis.paused) {
+                speechSynthesis.resume();
+                return;
+            }
+        }
+
+        if(!utterance){
+            const texto = document.getElementById(section).innerText;
+            
+            utterance = new SpeechSynthesisUtterance(texto);
+            
+            utterance.lang = "es-ES";
+            utterance.rate = 1;
+            utterance.onend = () => utterance = null;
+            speechSynthesis.speak(utterance);
+        }
+    }
+
         //go back: let the user choose one of the 3 options again
     function goBack(){
         //show the options to choose
@@ -96,6 +129,10 @@ export function CodigoController (params){
         actualSection.style.display="none";
         pruebatu_section.style.display="";
         prueba_btn.style.display = "none";
+
+        //cancelling audio
+        utterance = null;
+        speechSynthesis.cancel();
         
         return;
     }
@@ -118,6 +155,10 @@ export function CodigoController (params){
             goBack();
         }
         isVisible = false;
+
+        //cancelling audio
+        utterance = null;
+        speechSynthesis.cancel();
     }
 
     function fillPistas(section){
@@ -224,6 +265,12 @@ export function CodigoController (params){
     entender_btn.onclick = () => { showSection("entender"), fillPistas("entender")};
     falla_btn.onclick = () => { showSection("falla"), fillPistas("falla") };
     noaprendo_btn.onclick = () => { showSection("noaprendo"), fillPistas("noaprendo") };
+
+        //reading content
+    audio_entender.onclick = () => {leerEvent("entender")};
+    audio_falla.onclick = () => {leerEvent("falla")};
+    audio_noaprendo.onclick = () => {leerEvent("noaprendo")};
+
 
         //going back to choose another OR going back to the previous section when on Pruebalo tu
     atras_btn.addEventListener('click', () =>{

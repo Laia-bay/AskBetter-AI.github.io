@@ -6,7 +6,12 @@ export function ResolverScreen (params){
         <h4 class="titles" style="color:limegreen"><b>Resolver ejercicios</b></h4>
 
         <section id="resolver" class="content-section">
-            <h3 style="color:limegreen"><em><b>Resolución de ejercicios con IA Generativa</b></em></h3>
+            <div style="display:flex; flex-direction:row; gap:20px; margin-top:2%">
+                <h3 style="color:limegreen"><em><b>Resolución de ejercicios con IA Generativa</b></em></h3>
+                <button id="audioResolver" class="btn btn-outline-light btn-sm" style="height:30px; width:30px">
+                    <i class="bi bi-volume-up"></i>
+                </button>
+            </div>
             <div>
                 <p>
                 La IA Generativa tiene un gran potencial para explicar los pasos de los ejercicios de diferentes maneras para el/la estudiante, 

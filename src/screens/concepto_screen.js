@@ -15,7 +15,12 @@ export function ConceptoScreen (params){
         <!--depending on the option chosen the content will be different-->
 
         <section id="teoria" class="content-section" style="display:none">
-            <h3 style="color:blueviolet"><em><b>No entiendo la teoría</b></em></h3>
+            <div style="display:flex; flex-direction:row; gap:20px;">
+                <h3 style="color:blueviolet"><em><b>No entiendo la teoría</b></em></h3>
+                <button id="audioTeoria" class="btn btn-outline-light btn-sm" style="height:30px; width:30px">
+                    <i class="bi bi-volume-up"></i>
+                </button>
+            </div>
             <div>
                 <p>
                 La IA Generativa tiene un gran potencial para explicar la teoría de diferentes maneras para el/la estudiante, 
@@ -181,7 +186,12 @@ export function ConceptoScreen (params){
 
 
         <section id="repasar" class="content-section" style="display:none">
-            <h3 style="color:blueviolet"><em><b>Quiero repasar la teoría</b></em></h3>
+            <div style="display:flex; flex-direction:row; gap:20px;">
+                <h3 style="color:blueviolet"><em><b>Quiero repasar la teoría</b></em></h3>
+                <button id="audioRepasar" class="btn btn-outline-light btn-sm" style="height:30px; width:30px">
+                    <i class="bi bi-volume-up"></i>
+                </button>
+            </div>
             <div>
             <p>
             La IA Generativa tiene un gran potencial para actuar como profesor, ofrecer ejercicios y preguntas para asegurar 
@@ -263,7 +273,7 @@ export function ConceptoScreen (params){
                         <h5 style="color:blueviolet"><b><em>Prompts habituales</b></em></h5>
                         <div class="promptText">
                             <p><i class="bi bi-caret-right"></i>Hazme preguntas para ver si he entendido esto.</p>
-                            <p><i class="bi bi-caret-right"></i>Ayudame a repasar esta teoria.</p>
+                            <p><i class="bi bi-caret-right"></i>Ayudame a repasar esta teoría.</p>
                         </div>
                     </div>
                     <div>

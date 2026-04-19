@@ -16,7 +16,12 @@ export function CodigoScreen (params){
         <!--depending on the option chosen the content will be different-->
 
         <section id="entender" class="content-section" style="display:none">
-            <h3 style="color:dodgerblue"><em><b>No entiendo el código</b></em></h3>
+            <div style="display:flex; flex-direction:row; gap:20px;">
+                <h3 style="color:dodgerblue"><em><b>No entiendo el código</b></em></h3>
+                <button id="audioEntender" class="btn btn-outline-light btn-sm" style="height:30px; width:30px">
+                    <i class="bi bi-volume-up"></i>
+                </button>
+            </div>
 
             <p>No te preocupes, es un problema muy común.
              La IA Generativa tiene un gran potencial para explicar código y aprender cosas nuevas, 
@@ -155,7 +160,12 @@ export function CodigoScreen (params){
         </section>
 
         <section id="falla" class="content-section" style="display:none">
-            <h3 style="color:dodgerblue"><em><b>No me funciona y no sé por qué</b></em></h3>
+            <div style="display:flex; flex-direction:row; gap:20px;">
+                <h3 style="color:dodgerblue"><em><b>No me funciona y no sé por qué</b></em></h3>
+                <button id="audioFalla" class="btn btn-outline-light btn-sm" style="height:30px; width:30px">
+                    <i class="bi bi-volume-up"></i>
+                </button>
+            </div>
 
             <p>No te preocupes, es un problema muy común.
              La IA Generativa tiene un gran potencial para explicar y debugar código, 
@@ -323,7 +333,12 @@ export function CodigoScreen (params){
         </section>
 
         <section id="noaprendo" class="content-section" style="display:none">
-            <h3 style="color:dodgerblue"><em><b>La IA lo resuelve y no aprendo</b></em></h3>
+            <div style="display:flex; flex-direction:row; gap:20px;">
+                <h3 style="color:dodgerblue"><em><b>La IA lo resuelve y no aprendo</b></em></h3>
+                <button id="audioNoaprendo" class="btn btn-outline-light btn-sm" style="height:30px; width:30px">
+                    <i class="bi bi-volume-up"></i>
+                </button>
+            </div>
 
             <p>No te preocupes, es un problema muy común.
              La IA Generativa tiene un gran potencial para crear código desde cero, pero la forma de pedirlo afectará a nuestro nivel de aprendizaje.

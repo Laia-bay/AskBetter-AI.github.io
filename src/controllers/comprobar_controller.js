@@ -19,6 +19,11 @@ export function ComprobarController (params){
     //knowing if pruebalo tu section is visible
     let isVisible = null;
 
+     //controlling the audio
+    const audio_comprobar = container.querySelector('#audioComprobar');
+    let utterance = null;
+
+
     //referencing the elements from pruebalo tu section/page
     const pistas = container.querySelector('#pistasPrompt');
     const pista_btn = container.querySelector('#pistaBtn');
@@ -26,18 +31,55 @@ export function ComprobarController (params){
 
 
     //FUNCTIONS
+
+        //leer: reads the content of the page
+    function leerEvent() {
+
+        if (utterance){
+            if (speechSynthesis.speaking && !speechSynthesis.paused) {
+                speechSynthesis.pause();
+                return;
+            }
+        
+            if (speechSynthesis.paused) {
+                speechSynthesis.resume();
+                return;
+            }
+        }
+
+        if(!utterance){
+            const texto = comprobar_section.innerText;
+            
+            utterance = new SpeechSynthesisUtterance(texto);
+            
+            utterance.lang = "es-ES";
+            utterance.rate = 1;
+            utterance.onend = () => utterance = null;
+            speechSynthesis.speak(utterance);
+        }
+    }
+
+        //pruebalo tu: give the user some tips on how to apply it to their own code
     function pruebaloTu(){
         isVisible = true;
         pruebatu_section.style.display="";
         comprobar_section.style.display="none";
         prueba_btn.style.display = "none";
         atras_btn.style.display="";
+
+        //cancelling audio
+        utterance = null;
+        speechSynthesis.cancel();
         
         return;
     }
 
 
     //EVENT LISTENERS
+
+    //reading content
+    audio_comprobar.onclick = () => {leerEvent()};
+
         //going to pruebalo tu screen
     prueba_btn.addEventListener('click', ()=> {pruebaloTu()});
 

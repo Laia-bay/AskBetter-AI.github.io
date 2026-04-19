@@ -17,8 +17,13 @@ export function ResolverController (params){
     const atras_btn = container.querySelector('#atrasBtn');
     const prueba_btn = container.querySelector('#pruebaBtn');
 
+
     //knowing if pruebalo tu section is visible
     let isVisible = null;
+
+    //controlling the audio
+    const audio_resolver = container.querySelector('#audioResolver');
+    let utterance = null;
 
     //referencing the elements from pruebalo tu section/page
     const pistas = container.querySelector('#pistasPrompt');
@@ -27,18 +32,54 @@ export function ResolverController (params){
 
 
     //FUNCTIONS
+        //leer: reads the content of the page
+    function leerEvent() {
+
+        if (utterance){
+            if (speechSynthesis.speaking && !speechSynthesis.paused) {
+                speechSynthesis.pause();
+                return;
+            }
+        
+            if (speechSynthesis.paused) {
+                speechSynthesis.resume();
+                return;
+            }
+        }
+
+        if(!utterance){
+            const texto = resolver_section.innerText;
+            
+            utterance = new SpeechSynthesisUtterance(texto);
+            
+            utterance.lang = "es-ES";
+            utterance.rate = 1;
+            utterance.onend = () => utterance = null;
+            speechSynthesis.speak(utterance);
+        }
+    }
+
+        //pruebalo tu: give the user some tips on how to apply it to their own code
     function pruebaloTu(){
         isVisible = true;
         pruebatu_section.style.display="";
         resolver_section.style.display="none";
         prueba_btn.style.display = "none";
         atras_btn.style.display="";
+
+        //cancelling audio
+        utterance = null;
+        speechSynthesis.cancel();
         
         return;
     }
 
 
     //EVENT LISTENERS
+
+        //reading content
+    audio_resolver.onclick = () => {leerEvent()};
+
         //going to pruebalo tu screen
     prueba_btn.addEventListener('click', ()=> {pruebaloTu()});
 

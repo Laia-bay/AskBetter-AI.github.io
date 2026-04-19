@@ -27,6 +27,11 @@ export function ConceptoController (params){
     let actualSection = null;
     let isVisible = null;
 
+    //controlling the audio
+    const audio_teoria = container.querySelector('#audioTeoria');
+    const audio_repasar = container.querySelector('#audioRepasar');
+    let utterance = null;
+
     //referencing the elements from pruebalo tu section/page
     const pistas = container.querySelector('#pistasPrompt');
     const pista_btn = container.querySelector('#pistaBtn');
@@ -61,6 +66,33 @@ export function ConceptoController (params){
         }
     }
 
+        //leer: reads the content of the page
+    function leerEvent(section) {
+
+        if (utterance){
+            if (speechSynthesis.speaking && !speechSynthesis.paused) {
+                speechSynthesis.pause();
+                return;
+            }
+        
+            if (speechSynthesis.paused) {
+                speechSynthesis.resume();
+                return;
+            }
+        }
+
+        if(!utterance){
+            const texto = document.getElementById(section).innerText;
+            
+            utterance = new SpeechSynthesisUtterance(texto);
+            
+            utterance.lang = "es-ES";
+            utterance.rate = 1;
+            utterance.onend = () => utterance = null;
+            speechSynthesis.speak(utterance);
+        }
+    }
+
         //go back: let the user choose one of the 3 options again
     function goBack(){
         //show the options to choose
@@ -73,6 +105,7 @@ export function ConceptoController (params){
 
         //hide the navigation buttons
         footer_section.style.display="none";
+
     }
 
         //pruebalo tu: give the user some tips on how to apply it to their own code
@@ -81,13 +114,17 @@ export function ConceptoController (params){
         actualSection.style.display="none";
         pruebatu_section.style.display="";
         prueba_btn.style.display = "none";
+
+        //cancelling audio
+        utterance = null;
+        speechSynthesis.cancel();
         
         return;
     }
 
     function atrasEvent(actualSection){
         //if we are on pruebalo tu section, atrás goes back to the previous one
-
+        debugger;
         if(isVisible == true){
             actualSection.style.display="";
             pruebatu_section.style.display="none";
@@ -103,6 +140,11 @@ export function ConceptoController (params){
             goBack();
         }
         isVisible = false;
+        
+        //cancelling audio
+        utterance = null;
+        speechSynthesis.cancel();
+        
     }
 
     function fillPistas(section){
@@ -167,6 +209,11 @@ export function ConceptoController (params){
         //choosing an option
     teoria_btn.onclick = () => { showSection("teoria"), fillPistas("teoria")};
     repasar_btn.onclick = () => { showSection("repasar"), fillPistas("repasar") };
+
+
+        //reading content
+    audio_teoria.onclick = () => {leerEvent("teoria")};
+    audio_repasar.onclick = () => {leerEvent("repasar")};
 
         //going back to choose another OR going back to the previous section when on Pruebalo tu
     atras_btn.addEventListener('click', () =>{
