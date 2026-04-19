@@ -155,8 +155,7 @@ export function ConceptoController (params){
                     <hr></hr>
                     <p><i class="bi bi-caret-right"></i>Pedir un ejemplo real.</p>
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir una comparación con algo de tu vida cotidiana.</p>
-                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir que ponga ejemplos cada vez más complejos.
-                    </p>
+                    <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir que ponga ejemplos cada vez más complejos.</p>
                 </div>
                 <div id="pistaLong">
                     <p style="justify-self:center">Si aprendes de manera visual</p>
@@ -191,6 +190,7 @@ export function ConceptoController (params){
                     </p>
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Menciona el nivel de feedback que quieres 
                     (detallado o conciso).</p>
+                </div>
             `;
 
 

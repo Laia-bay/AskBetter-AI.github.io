@@ -196,7 +196,8 @@ export function ComprobarScreen (params){
                     <i class="bi bi-lightbulb"></i> Pista
                 </button>
             </div>
-            <div id="pistasPrompt" class="promptText" style="display:none; gap:0 !important; flex-direction:column; width:680px">
+            <div id="pistasPrompt" class="promptText" style="display:none; justify-self:center; width:630px">
+                <div>
                     <p><i class="bi bi-caret-right"></i>Especificar rol de profesor.</p>
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Compartir tu solución.</p>
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Compartir un ejercicio que sepas que es correcto como 
@@ -205,6 +206,7 @@ export function ComprobarScreen (params){
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir que no haga el ejercicio desde cero, sino que marque los errores en tu
                     procedimiento.
                     </p>
+                </div>
             </div>
             <h3 style="color:darkorange"><em><b>Momento de reflexión</b></em></h3>
             <p>Una vez has aplicado los nuevos prompts, es momento de reflexionar sobre qué has aprendido y cómo te sientes. 

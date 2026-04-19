@@ -287,8 +287,9 @@ p {
 
 /*specific pista section that is too long*/
 #pistaLong {
-    max-width:40% !important;
-  }
+  max-width:40% !important;
+}
+
 
 /*showing pistas button*/
 .btn.pista{
@@ -472,7 +473,7 @@ p {
     margin: 1% !important;
     gap:10px !important;
     align-self: center;
-    height:300px;
+    height:350px;
     overflow-y: auto;
     padding:10px 10px;
   }
