@@ -18,12 +18,12 @@ export function HelpScreen (params){
         contenido de diferentes maneras</b>, <b>la elección</b>, y <b>la autoreflexión del estudiante</b>.</p>
         <p>En la pantalla principal, puedes elegir qué contenido ver según lo que necesites en ese momento, las opciones son:</p>
         <ul class="ps-4">
-            <li><span style="color:violet"><b>Entender un concepto:</b></span> Relacionado con el aprendizaje y el repaso de conceptos 
+            <li><b style="color:violet">Entender un concepto:</b></span> Relacionado con el aprendizaje y el repaso de conceptos 
             teóricos.</li>
-            <li><span style="color:dodgerblue"><b>Trabajar con código:</b></span> Tips para entender, debugar, y aprender a programar.</li>
-            <li><span style="color:limegreen"><b>Resolver ejercicios:</b></span> Encontrarás diferentes prompts para diferentes maneras de 
+            <li><span><b style="color:dodgerblue">Trabajar con código:</b></span> Tips para entender, debugar, y aprender a programar.</li>
+            <li><span><b style="color:limegreen">Resolver ejercicios:</b></span> Encontrarás diferentes prompts para diferentes maneras de 
             aprender.</li>
-            <li><span style="color:darkorange"><b>Comprobar ejercicios:</b></span> Cómo comprobar de manera correcta y eficiente los ejercicios 
+            <li><span><b style="color:darkorange">Comprobar ejercicios:</b></span> Cómo comprobar de manera correcta y eficiente los ejercicios 
             hechos.</li>
         </ul>
         <p> Aunque el contenido es diferente, todas las opciones tienen la misma <b>estructura:</b></p>
