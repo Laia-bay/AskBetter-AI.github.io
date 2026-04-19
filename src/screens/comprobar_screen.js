@@ -196,7 +196,7 @@ export function ComprobarScreen (params){
                     <i class="bi bi-lightbulb"></i> Pista
                 </button>
             </div>
-            <div id="pistasPrompt" class="promptText" style="display:none; gap:0; flex-direction:column; width:680px">
+            <div id="pistasPrompt" class="promptText" style="display:none; gap:0 !important; flex-direction:column; width:680px">
                     <p><i class="bi bi-caret-right"></i>Especificar rol de profesor.</p>
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Compartir tu solución.</p>
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Compartir un ejercicio que sepas que es correcto como 

@@ -170,8 +170,7 @@ export function ConceptoController (params){
                     </p>
                 </div>
             `;
-            pistas.style.marginLeft="60px";
-            pistas.style.alignSelf="flex-start";
+
             pistas.style.justifyContent="center";
             pistas.style.width="1000px";
             pistas.style.gap="100px";

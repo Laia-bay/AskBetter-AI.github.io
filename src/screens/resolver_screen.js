@@ -151,7 +151,7 @@ export function ResolverScreen (params){
                 </div>
                 <div>
                     <h5 style="color:limegreen"><b><em>Resultado 2 -</b> Prompt nº2 (mejorado)</em></h5>
-                    <div class="promptText" style="max-height:360px">
+                    <div class="promptText">
                         <p>Perfecto, vamos paso a paso sin spoilear la solución</p>
                         <div>
                             <h5>Primer paso</h5>
@@ -191,7 +191,7 @@ export function ResolverScreen (params){
                 </button>
             </div>
             <div id="pistasPrompt" class="promptText" style="display:none; gap:30px">
-                <div style="max-width:30%">
+                <div>
                     <p style="justify-self:center">Si no sabes por dónde empezar</p>
                     <hr></hr>
                     <p><i class="bi bi-caret-right"></i>Pedir que actúe como profesor y te explique qué necesitas saber para resolver el ejercicio.</p>
@@ -199,14 +199,14 @@ export function ResolverScreen (params){
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Intentar explicar cómo lo harías, y que te corrija.</p>
                     </p>
                 </div>
-                <div style="width:33%">
+                <div>
                     <p style="justify-self:center">Si no te sale una parte específica</p>
                     <hr></hr>
                     <p><i class="bi bi-caret-right"></i>Explicar lo que has hecho hasta ahora, y dónde crees que estás fallando.</p>
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir que sólo te haga ese apartado, y que te haga preguntas o te de pistas para el siguiente.</p>
                     </p>
                 </div>
-                <div style="width:33%">
+                <div>
                     <p style="justify-self:center">Si aprendes a base de repetición</p>
                     <hr></hr>
                     <p><i class="bi bi-caret-right"></i>Pedir que te haga un ejercicio similar con diferentes números.</p>
