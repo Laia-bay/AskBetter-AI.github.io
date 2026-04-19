@@ -3,7 +3,12 @@ export function HelpScreen (params){
     // ELEMENTS IN HTML FORM
     const container = document.createElement('div');
     container.innerHTML = `
-        <h4 class="titles">Información sobre <em>'EstudIA mejor'</em></h4>
+        <div style="display:flex; flex-direction:row; gap:20px;">
+            <h4 class="titles">Información sobre <em>'EstudIA mejor'</em></h4>
+            <button id="audioInfo" class="btn btn-outline-light" style="height:45px; width:45px">
+                <i class="bi bi-volume-up"></i>
+            </button>
+        </div>
         <hr></hr>
         <div id="helpDiv">
         <p style="font-size:18px"> Esta página web está diseñada con los <b>estudiantes de Ingeniería TIC</b> en mente.</p>
