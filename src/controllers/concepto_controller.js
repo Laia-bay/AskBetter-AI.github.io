@@ -158,7 +158,7 @@ export function ConceptoController (params){
                     <p style="margin-top:4px"><i class="bi bi-caret-right"></i>Pedir que ponga ejemplos cada vez más complejos.
                     </p>
                 </div>
-                <div style="max-width:40%">
+                <div id="pistaLong">
                     <p style="justify-self:center">Si aprendes de manera visual</p>
                     <hr></hr>
                     <p><i class="bi bi-caret-right"></i>Pedir esquemas o diagramas.</p>
@@ -181,8 +181,6 @@ export function ConceptoController (params){
         if (section == "repasar"){
             pistas.innerHTML = `
                 <div>
-                    <p style="justify-self:center">Cosas a tener en cuenta</p>
-                    <hr></hr>
                     <p><i class="bi bi-caret-right"></i>Menciona el rol de profesor.</p>
                     <p><i class="bi bi-caret-right"></i>Menciona el nivel que deberían tener las respuestas.<br>
                     (por ejemplo: 1er curso de ingeniería)
@@ -196,8 +194,7 @@ export function ConceptoController (params){
                     (detallado o conciso).</p>
             `;
 
-            pistas.style.marginLeft="200px";
-            pistas.style.alignSelf="flex-start";
+
             pistas.style.justifyContent="center";
             pistas.style.width="700px";
         }

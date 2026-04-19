@@ -285,6 +285,11 @@ p {
   gap:100px;
 }
 
+/*specific pista section that is too long*/
+#pistaLong {
+    max-width:40% !important;
+  }
+
 /*showing pistas button*/
 .btn.pista{
   width: 70px;
@@ -471,11 +476,15 @@ p {
     padding:10px 10px;
   }
 
+  #pistaLong {
+    max-width:96% !important;
+  }
+
   .pistaDiv{
     display:flex;
     flex-direction:row;
     gap:10px;
-    width: 96%;
+    width: 96% !important;
   }
 
   .titleReflection{
