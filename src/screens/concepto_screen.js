@@ -3,7 +3,7 @@ export function ConceptoScreen (params){
     // ELEMENTS IN HTML FORM
     const container = document.createElement('div');
     container.innerHTML = `
-        <h4 class="titles" style="color:blueviolet"><b>Entender un concepto</b></h4>
+        <h4 class="titles" style="color:violet"><b>Entender un concepto</b></h4>
 
         <p class="subtitles" style="margin-top:50px"> ¿Qué problema te estás encontrando?</p>
     
@@ -16,7 +16,7 @@ export function ConceptoScreen (params){
 
         <section id="teoria" class="content-section" style="display:none">
             <div style="display:flex; flex-direction:row; gap:20px;">
-                <h3 style="color:blueviolet"><em><b>No entiendo la teoría</b></em></h3>
+                <h3 style="color:violet"><em><b>No entiendo la teoría</b></em></h3>
                 <button id="audioTeoria" class="btn btn-outline-light btn-sm" style="height:30px; width:30px">
                     <i class="bi bi-volume-up"></i>
                 </button>
@@ -31,7 +31,7 @@ export function ConceptoScreen (params){
                 </p>
             </div>
 
-            <h3 style="color:blueviolet"><em><b>Estrategia habitual</b></em></h3>
+            <h3 style="color:violet"><em><b>Estrategia habitual</b></em></h3>
             <p>Para ahorrar tiempo, normalmente le decimos a la IA que haga un resumen, o que lo explique de otra manera,
             pero para obtener un buen resultado, se debe ser más específico. <br>
             Si no, es posible que el nivel al que te lo explique no sea el adecuado, se olvide de puntos clave, o no se adhiera
@@ -41,7 +41,7 @@ export function ConceptoScreen (params){
             </p>
 
             
-            <h3 style="color:blueviolet"><em><b>Estrategia alternativa</b></em></h3>
+            <h3 style="color:violet"><em><b>Estrategia alternativa</b></em></h3>
             <div>
                 <p>Para sacarle el mayor partido a la IA generativa a la hora de estudiar o aprender teoría, hay que crear prompts más específicos.</p>
                 <p>Una cosa muy importante es dar información del contexto: en qué curso estás, qué estudias, qué asignatura es...<br>
@@ -51,7 +51,7 @@ export function ConceptoScreen (params){
                 Por eso, mencionar de qué manera aprendes mejor hará que la IA te enseñe de esa manera, y el tiempo dedicado sea más eficiente, 
                 reduciendo la frustración por no entender lo que explica, o por no obtener una respuesta que te sirva.</p>
             </div>
-            <h3 style="color:blueviolet"><em><b>Comparativa</b></em></h3>
+            <h3 style="color:violet"><em><b>Comparativa</b></em></h3>
             <p>Pongamos como ejemplo que necesitas entender cómo funciona <em>'el protocolo TCP'</em>.<br>
             Esto es lo que tienes en las diapositivas de teoría:
             </p>
@@ -76,14 +76,14 @@ export function ConceptoScreen (params){
                 </div>
                 <div class="promptsDiv">
                     <div>
-                        <h5 style="color:blueviolet"><b><em>Prompts habituales</b></em></h5>
+                        <h5 style="color:violet"><b><em>Prompts habituales</b></em></h5>
                         <div class="promptText">
                             <p><i class="bi bi-caret-right"></i>Explicame esto.</p>
                             <p><i class="bi bi-caret-right"></i>No lo entiendo, explícalo de otra manera.</p>
                         </div>
                     </div>
                     <div>
-                        <h5 style="color:blueviolet"><b><em>Prompts mejorados</b></em></h5>
+                        <h5 style="color:violet"><b><em>Prompts mejorados</b></em></h5>
                         <div class="promptText">
                             <p><i class="bi bi-caret-right"></i>No entiendo este concepto, ¿me lo puedes explicar brevemente 
                             y con un ejemplo real?</p>
@@ -97,7 +97,7 @@ export function ConceptoScreen (params){
             </div>
             <div class="resultsDiv">
                 <div>
-                    <h5 style="color:blueviolet"><b><em>Resultado 1-</b> Prompt nº2 (habitual)</em></h5>
+                    <h5 style="color:violet"><b><em>Resultado 1-</b> Prompt nº2 (habitual)</em></h5>
                     <div class="promptText">
                         <h5><b>¿Qué hace TCP?</b></h5>
                         <div>
@@ -121,7 +121,7 @@ export function ConceptoScreen (params){
                     </div>
                 </div>
                 <div>
-                    <h5 style="color:blueviolet"><b><em>Resultado 2 -</b> Prompt nº1 (mejorado)</em></h5>
+                    <h5 style="color:violet"><b><em>Resultado 2 -</b> Prompt nº1 (mejorado)</em></h5>
                     <div class="promptText" style="max-height:360px">
                         <h5><b>1. Transferencia fiable de datos</b></h5>
                         <div>
@@ -187,7 +187,7 @@ export function ConceptoScreen (params){
 
         <section id="repasar" class="content-section" style="display:none">
             <div style="display:flex; flex-direction:row; gap:20px;">
-                <h3 style="color:blueviolet"><em><b>Quiero repasar la teoría</b></em></h3>
+                <h3 style="color:violet"><em><b>Quiero repasar la teoría</b></em></h3>
                 <button id="audioRepasar" class="btn btn-outline-light btn-sm" style="height:30px; width:30px">
                     <i class="bi bi-volume-up"></i>
                 </button>
@@ -199,7 +199,7 @@ export function ConceptoScreen (params){
             </p>
             <p>Ahora miraremos la estrategia que es usada habitualmente, y alternativas que pueden ser útiles.</p>
             </div>
-            <h3 style="color:blueviolet"><em><b>Estrategia habitual</b></em></h3>
+            <h3 style="color:violet"><em><b>Estrategia habitual</b></em></h3>
             <div>
             <p>Para ahorrar tiempo, se suele pedir a la IA que te pregunte para ver si te lo sabes, 
             pero esto no tiene en cuenta el nivel por el que debe preguntar, cuáles son los conceptos más importantes,
@@ -212,7 +212,7 @@ export function ConceptoScreen (params){
             </p>
             </div>
             
-            <h3 style="color:blueviolet"><em><b>Estrategia alternativa</b></em></h3>
+            <h3 style="color:violet"><em><b>Estrategia alternativa</b></em></h3>
             <div>
                 <p>Para sacarle el mayor partido a la IA generativa, se debe ser más específico.<br>
                 En casos de explicación y repaso de teoría, es muy útil decirle a la IA que coja el rol de "profesor", de esta manera,
@@ -223,7 +223,7 @@ export function ConceptoScreen (params){
                 de dificultad, o preguntas como las que te saldrían en el examen.<br>
                 Para ambos casos, es importante darle al menos un ejemplo a tu IA conversacional para que sepa qué es lo que quieres.</p>
             </div>
-            <h3 style="color:blueviolet"><em><b>Comparativa</b></em></h3>
+            <h3 style="color:violet"><em><b>Comparativa</b></em></h3>
             <p>Pongamos como ejemplo que quieres repasar <em>'cómo funciona una CDN'</em>.<br>
             Esto es lo que tienes en las diapositivas/en tus apuntes:
             </p>
@@ -270,14 +270,14 @@ export function ConceptoScreen (params){
                 </div>
                 <div class="promptsDiv">
                     <div>
-                        <h5 style="color:blueviolet"><b><em>Prompts habituales</b></em></h5>
+                        <h5 style="color:violet"><b><em>Prompts habituales</b></em></h5>
                         <div class="promptText">
                             <p><i class="bi bi-caret-right"></i>Hazme preguntas para ver si he entendido esto.</p>
                             <p><i class="bi bi-caret-right"></i>Ayudame a repasar esta teoría.</p>
                         </div>
                     </div>
                     <div>
-                        <h5 style="color:blueviolet"><b><em>Prompts mejorados</b></em></h5>
+                        <h5 style="color:violet"><b><em>Prompts mejorados</b></em></h5>
                         <div class="promptText">
                             <p><i class="bi bi-caret-right"></i>Actúa como si fueras mi profesor. Quiero repasar este contenido, 
                             que es de primer curso de ingeniería. Haz rondas de 5 preguntas incrementando la dificultad cada vez 
@@ -298,7 +298,7 @@ export function ConceptoScreen (params){
             </div>
             <div class="resultsDiv" style="margin-left:70px; max-width:85%">
                 <div>
-                    <h5 style="color:blueviolet"><b><em>Resultado 1-</b> Prompt nº2 (habitual)</em></h5>
+                    <h5 style="color:violet"><b><em>Resultado 1-</b> Prompt nº2 (habitual)</em></h5>
                     <div class="promptText" style="width:650px">
                         <h5>Conceptos básicos</h5>
                         <ol>
@@ -344,7 +344,7 @@ export function ConceptoScreen (params){
                     </div>
                 </div>
                 <div>
-                    <h5 style="color:blueviolet"><b><em>Resultado 2 -</b> Prompt nº1 (mejorado)</em></h5>
+                    <h5 style="color:violet"><b><em>Resultado 2 -</b> Prompt nº1 (mejorado)</em></h5>
                     <div class="promptText">
                         <h5><b><em>Repaso de CDN</em></b></h5>
 
@@ -385,7 +385,7 @@ export function ConceptoScreen (params){
         </section>
 
         <section id="pruebatu" class="content-section" style="display:none">
-            <h3 style="color:blueviolet"><em><b>Aplícalo a tu caso particular</b></em></h3>    
+            <h3 style="color:violet"><em><b>Aplícalo a tu caso particular</b></em></h3>    
             <p>Piensa en los prompts propuestos en la página anterior, y utiliza, o crea uno particular que te sirva para la asignatura que quieras.
             Utiliza tu IA de confianza.</p>
             <div class="pistaDiv">
@@ -397,10 +397,10 @@ export function ConceptoScreen (params){
             <div id="pistasPrompt" class="promptText" style="display:none; gap:40px">
                 <!--se rellenará dinámicamente--!>
             </div>
-            <h3 style="color:blueviolet"><em><b>Momento de reflexión</b></em></h3>
+            <h3 style="color:violet"><em><b>Momento de reflexión</b></em></h3>
             <p>Una vez has aplicado los nuevos prompts, es momento de reflexionar sobre qué has aprendido y cómo te sientes. 
             Aquí debajo tienes algunas afirmaciones que te podrían servir como guía.</p>
-            <div class="titleReflection"><h5 style="color:blueviolet"><b><em>¿Qué ha cambiado al usar este tipo de prompts?</b></em></h5></div>
+            <div class="titleReflection"><h5 style="color:violet"><b><em>¿Qué ha cambiado al usar este tipo de prompts?</b></em></h5></div>
             <div class="reflection">
                 <div>
                     <input class="form-check-input concepto" type="checkbox" id="opt1">

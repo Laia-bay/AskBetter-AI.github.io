@@ -54,11 +54,11 @@
 }
 
 .btn.option.concepto {
-  border-color:blueviolet;
+  border-color:violet;
 }
 
 .btn.option.concepto:hover {
-  background-color:blueviolet;
+  background-color:violet;
 }
 
 .btn.option.codigo {
@@ -242,7 +242,7 @@ p {
 }
 
 .btn.prueba.concepto{
-  background-color: blueviolet;
+  background-color: violet;
 }
 
 .btn.prueba.concepto:hover {
@@ -306,10 +306,10 @@ p {
 }
 
 .btn.pista.concepto{
-  border: 2px solid blueviolet;
+  border: 2px solid violet;
 }
 .btn.pista.concepto:hover{
-  background-color: blueviolet;
+  background-color: violet;
 }
 
 .btn.pista.resolver{
@@ -351,8 +351,8 @@ p {
 /*changing color of checked boxes depending on screen*/
 /*original is already blue so there is no need to change in codigo*/
 .form-check-input.concepto:checked {
-  background-color: blueviolet;
-  border-color: blueviolet;
+  background-color: violet;
+  border-color: violet;
 }
 
 .form-check-input.resolver:checked {
@@ -363,6 +363,25 @@ p {
   background-color: darkorange;
   border-color: darkorange;
 }
+
+/*HELP-INFO SCREEN*/
+#helpDiv{
+  font-size: 18px;
+  text-align: justify;
+}
+
+.link:hover{
+  cursor:pointer;
+  font-weight: bolder;
+}
+
+#helpDiv ul{
+  padding-left: 20px;
+}
+#helpDiv p{
+   margin-left:0;
+}
+
 
 
 
@@ -386,11 +405,11 @@ p {
   }
 
   .titles {
-    text-align:center
+    text-align:center;
   }
 
   .subtitles {
-    text-align:center
+    text-align:center;
   }
 
   #coding{
