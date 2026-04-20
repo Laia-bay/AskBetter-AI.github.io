@@ -42,7 +42,7 @@ export function HelpScreen (params){
         </ol>
 
         <p> Algunas de las sugerencias son comunes para todos los caminos a elegir, ya que provienen de las mismas técnicas, como el 
-        <b>chain-of-thought</b>, que se trata de pedir el "paso a paso" en tareas extensas y evita equivocaciones de la IA, o el <b<role-playing</b>, 
+        <b>chain-of-thought</b>, que se trata de pedir el "paso a paso" en tareas extensas y evita equivocaciones de la IA, o el <b>role-playing</b>, 
         que permite que la IA actúe como tu profesor, así ofreciendo un feedback mucho más educativo y útil para ti.
         </p>
 
